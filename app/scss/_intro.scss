@@ -1,9 +1,9 @@
 .intro {
     background-color: $introDB;
-    background-image: url(./images/bg-curvy-mobile.svg);
+    background-image: url(../../images/bg-curvy-mobile.svg);
 
             @include breakpoint-up(desktop) {
-                background-image: url(./images/bg-curvy-desktop.svg);
+                background-image: url(../../images/bg-curvy-desktop.svg);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: -30px bottom;
