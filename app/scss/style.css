@@ -84,6 +84,8 @@ button:hover::before {
 .intro {
   background-color: #1c2431;
   background-image: url(../../images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center 44%;
 }
 
 @media screen and (min-width: 800px) {
@@ -91,7 +93,7 @@ button:hover::before {
     background-image: url(../../images/bg-curvy-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: -30px bottom;
+    background-position: center bottom;
     height: 100%;
   }
 }
