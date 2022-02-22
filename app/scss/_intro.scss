@@ -1,0 +1,85 @@
+.intro {
+    background-color: $introDB;
+    background-image: url(/images/bg-curvy-mobile.svg);
+
+            @include breakpoint-up(desktop) {
+                background-image: url(/images/bg-curvy-desktop.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: -30px bottom;
+                height: 100%;
+            }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 48px;
+        @include breakpoint-up(desktop) {
+            padding: 72px 0;
+        }
+        .logo {
+            @include breakpoint-down(mobile) {
+                height: 26px;
+                width: 83px;
+            }
+        }
+        .menu {
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 56px;
+                @include breakpoint-down(mobile) {
+                    gap: 26px;
+                }
+                li {
+                    list-style-type: none;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        &:hover {
+                            font-weight: 700;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        color: #fff;
+        text-align: center;
+        max-width: 720px;
+        margin: auto;
+
+        .image {
+            @include breakpoint-down(mobile) {
+                padding: 0 35px;
+            }
+            img {
+            }
+        }
+
+        h2 {
+            padding: 55px 0 42px;
+            font-size: 40px;
+            line-height: 1.5;
+            @include breakpoint-down(mobile) {
+                font-size: 1.5rem;
+                padding: 40px 36px 24px 36px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.5;
+            margin-bottom: 34px;
+            @include breakpoint-down(mobile) {
+                font-size: 14px;
+                margin: 0 42px 35px;
+            }
+        }
+    }
+}

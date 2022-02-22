@@ -1,0 +1,32 @@
+// Colors
+
+$introDB: hsl(217, 28%, 15%);
+$mainDB: hsl(218, 28%, 13%);
+$footerDB: hsl(216, 53%, 9%);
+$testimonialsDB: hsl(219, 30%, 18%);
+
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$lightRed: hsl(0, 100%, 63%);
+
+// Fonts
+$fsBody: 14px;
+$ffHeadings:  'Raleway', sans-serif;
+$ffBody: 'Open Sans', sans-serif;
+
+// Mixin
+
+$breakpoint-up: ("mobile":"480px", "desktop": "800px");
+$breakpoint-down: ("mobile":"479px", "desktop":"800px");
+
+@mixin breakpoint-up($size) {
+    @media  screen and (min-width: map-get($breakpoint-up, $size)) {
+        @content;
+    }    
+}
+
+@mixin breakpoint-down($size) {
+    @media screen and (max-width: map-get($breakpoint-down, $size)) {
+        @content;
+    }
+}
