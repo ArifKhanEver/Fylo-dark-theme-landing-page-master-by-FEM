@@ -1,0 +1,112 @@
+.footer {
+    background-color: $footerDB;
+    color: white;
+    padding: 190px 0 80px;
+
+    .container {
+        max-width: 85%;
+    }
+    img {
+        display: inline;
+    }
+    a {
+        
+    }
+
+    .logo {
+        margin-bottom: 26px;
+    }
+
+    .contact-links {
+        display: grid;
+        gap: 40px;
+        // grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+        "one one two two three four five five"
+        ;
+
+        .location {
+            grid-area: one;
+            max-width: 350px;
+            position: relative;
+            img {
+                position: absolute;
+                margin-bottom: 50px;
+            }
+            p {
+                font-size: 15px;
+                margin-left: 30px;
+            }
+        }
+        .phoneEmail {
+            grid-area: two;
+            min-width: 190px;
+            & div,img>:first-child {
+                margin-bottom: 12px;
+            }
+
+            img {
+            margin-right: 20px;            
+            }
+        }
+        .links-1 {
+            grid-area: three;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            a {
+                width: max-content;
+                transition: .5s;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+        .links-2 {
+            grid-area: four;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            a {
+                width: max-content;
+                transition: .5s;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+            
+        }
+        .links-social {
+            grid-area: five;
+            display: flex;
+            gap: 15px;
+            max-width: 5px;
+            padding-left: 40px;
+
+            a {
+                height: fit-content;
+                transition: .3s;
+                i {
+                    border: 1px solid #fff;
+                    border-radius: 50%;    
+                    // margin: auto;
+                    padding: 7px 5px 5px 7px;
+                    
+                    &::before {
+                        display: inline-block;
+                        min-width: 10px;
+                        min-height: 10px;
+                    }
+                    
+                }
+
+                &:hover {
+                    color: $cyan;
+                    i {
+                        border: 1px solid $cyan;
+                    }
+                }
+            }
+        }
+    }
+}

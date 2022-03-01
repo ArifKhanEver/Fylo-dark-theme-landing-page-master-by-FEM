@@ -15,7 +15,10 @@ html:focus-within {
 }
 
 a, button{
+    color: inherit;
     cursor: pointer;
+    text-decoration: none;
+
 }
 
 a:not([class]) {
@@ -41,14 +44,14 @@ h1, h2, h3, h4 {
     margin: auto;
 }
 
-button {
+.button {
     border: none;
     border-radius: 27px;
-    width: 275px;
+    width: 280px;
     height: 55px;
     font-size: 1rem;
     color: white;
-    margin-bottom: 150px;
+    margin-bottom: 160px;
     @include breakpoint-down(mobile) {
         width: 240px;
         height: 50px;
