@@ -238,6 +238,10 @@ main {
 
         #form {
             // max-width: 800px;
+            @include breakpoint-up(desktop) {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         #email {
@@ -250,8 +254,16 @@ main {
             @include breakpoint-down(mobile){
                 width: 280px;
                 font-size: 10px;
-                margin: 0 0 24px;
-            }
+                // margin: 0 0 24px;
+            }            
+        }
+
+        #errorMessage {
+            margin-top: 5px;
+            color: $lightRed;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 13px;
         }
 
         .button {
@@ -260,6 +272,7 @@ main {
             margin-bottom: 0;
             @include breakpoint-down(mobile){
                 width: 280px;
+                margin-top: 24px;
             }
         }
         
