@@ -254,7 +254,7 @@ main {
             @include breakpoint-down(mobile){
                 width: 280px;
                 font-size: 10px;
-                // margin: 0 0 24px;
+                margin-right: 0;
             }            
         }
 

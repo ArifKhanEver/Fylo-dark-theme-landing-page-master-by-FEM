@@ -518,6 +518,7 @@ main .access #email {
   main .access #email {
     width: 280px;
     font-size: 10px;
+    margin-right: 0;
   }
 }
 
