@@ -25,6 +25,17 @@
         "one one two two three four five five"
         ;
 
+        @include breakpoint-down(mobile){
+            grid-template-areas: 
+            "one one"
+            "two two"
+            "three three"
+            "four four"
+            "five five"
+            ;
+            gap: 50px;
+        }
+
         .location {
             grid-area: one;
             max-width: 350px;
@@ -82,6 +93,9 @@
             gap: 15px;
             max-width: 5px;
             padding-left: 40px;
+            @include breakpoint-down(mobile){
+                padding-left: 30%;
+            }
 
             a {
                 height: fit-content;
