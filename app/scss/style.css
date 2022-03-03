@@ -522,14 +522,6 @@ main .access #email {
   }
 }
 
-main .access #errorMessage {
-  margin-top: 5px;
-  color: #ff4242;
-  text-align: left;
-  padding-left: 40px;
-  font-size: 13px;
-}
-
 main .access .button {
   width: 190px;
   height: 45px;
@@ -541,6 +533,19 @@ main .access .button {
     width: 280px;
     margin-top: 24px;
   }
+}
+
+.errorMessage {
+  display: none;
+  margin-top: 5px;
+  color: #ff4242;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 13px;
+}
+
+.active-error-alert {
+  display: block;
 }
 
 .footer {

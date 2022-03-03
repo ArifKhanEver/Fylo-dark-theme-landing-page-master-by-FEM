@@ -258,14 +258,6 @@ main {
             }            
         }
 
-        #errorMessage {
-            margin-top: 5px;
-            color: $lightRed;
-            text-align: left;
-            padding-left: 40px;
-            font-size: 13px;
-        }
-
         .button {
             width: 190px;
             height: 45px;
@@ -277,4 +269,17 @@ main {
         }
         
     }
+}
+
+.errorMessage {
+    display: none;
+    margin-top: 5px;
+    color: $lightRed;
+    text-align: left;
+    padding-left: 40px;
+    font-size: 13px;
+}
+
+.active-error-alert {
+    display: block;
 }
