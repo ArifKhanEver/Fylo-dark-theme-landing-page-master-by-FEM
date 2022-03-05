@@ -427,7 +427,7 @@ main .testimonials .testimonial-1 .profile .image img, main .testimonials .testi
   border-radius: 50%;
 }
 
-main .testimonials .testimonial-1 .profile .name h5, main .testimonials .testimonial-2 .profile .name h5, main .testimonials .testimonial-3 .profile .name h5 {
+main .testimonials .testimonial-1 .profile .name h4, main .testimonials .testimonial-2 .profile .name h4, main .testimonials .testimonial-3 .profile .name h4 {
   padding-bottom: 4px;
   font-size: 10px;
 }
