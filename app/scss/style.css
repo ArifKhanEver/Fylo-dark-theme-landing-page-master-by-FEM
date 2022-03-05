@@ -170,14 +170,14 @@ h1, h2, h3, h4 {
   }
 }
 
-.intro .hero h2 {
+.intro .hero h1 {
   padding: 30px 0 30px;
   font-size: 40px;
   line-height: 1.5;
 }
 
 @media screen and (max-width: 479px) {
-  .intro .hero h2 {
+  .intro .hero h1 {
     font-size: 1.5rem;
     padding: 40px 36px 24px 36px;
   }
@@ -249,13 +249,13 @@ main .features .feature-item .image img {
   margin: auto;
 }
 
-main .features .feature-item h3 {
+main .features .feature-item h2 {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 479px) {
-  main .features .feature-item h3 {
+  main .features .feature-item h2 {
     font-size: 1rem;
   }
 }
@@ -427,7 +427,7 @@ main .testimonials .testimonial-1 .profile .image img, main .testimonials .testi
   border-radius: 50%;
 }
 
-main .testimonials .testimonial-1 .profile .name h4, main .testimonials .testimonial-2 .profile .name h4, main .testimonials .testimonial-3 .profile .name h4 {
+main .testimonials .testimonial-1 .profile .name h3, main .testimonials .testimonial-2 .profile .name h3, main .testimonials .testimonial-3 .profile .name h3 {
   padding-bottom: 4px;
   font-size: 10px;
 }
