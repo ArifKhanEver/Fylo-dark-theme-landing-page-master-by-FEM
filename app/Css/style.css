@@ -100,8 +100,8 @@ h1, h2, h3, h4 {
 }
 
 .intro nav {
-  max-width: 1280px;
-  margin-left: auto;
+  max-width: 1250px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +144,7 @@ h1, h2, h3, h4 {
 
 @media screen and (min-width: 800px) {
   .intro nav .menu ul li a {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
