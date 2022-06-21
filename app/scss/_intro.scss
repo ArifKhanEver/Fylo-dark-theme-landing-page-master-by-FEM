@@ -12,6 +12,8 @@
             height: 100%;
         }
     nav {
+        max-width: 1280px;
+        margin-left: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -29,7 +31,8 @@
             ul {
                 display: flex;
                 justify-content: center;
-                gap: 50px;
+                gap: 60px;
+                
                 @include breakpoint-down(mobile) {
                     gap: 30px;
                 }
@@ -38,6 +41,9 @@
                     a {
                         color: white;
                         text-decoration: none;
+                        @include breakpoint-up(desktop) {
+                            font-size: 1.125rem;
+                        }
                         &:hover {
                             font-weight: 700;
                             text-decoration: underline;
@@ -51,19 +57,22 @@
     .hero {
         color: #fff;
         text-align: center;
-        max-width: 700px;
+        max-width: 800px;
         margin: auto;
 
         .image {
+            img {
+                position: relative;
+                left: 80px;
+                top: 20px;
+            }
             @include breakpoint-down(mobile) {
                 padding: 0 35px;
-            }
-            img {
             }
         }
 
         h1 {
-            padding: 30px 0 30px;
+            padding: 50px 0 30px 65px;
             font-size: 40px;
             line-height: 1.5;
             @include breakpoint-down(mobile) {
@@ -75,13 +84,16 @@
         p {
             font-size: 20px;
             max-width: 600px;
-            margin: auto;
+            margin-left: 17%;
             line-height: 1.5;
-            margin-bottom: 24px;
+            margin-bottom: 33px;
             @include breakpoint-down(mobile) {
                 font-size: 14px;
                 margin: 0 42px 35px;
             }
+        }
+        .button {
+            margin-left: 70px;
         }
     }
 }
